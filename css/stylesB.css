@@ -246,7 +246,8 @@ ol li {
   line-height: 24px;
   font-size: 16px;
   font-style: normal;
-  color: var(--white20) margin-block: 16px;
+  color: var(--white20) ;
+  margin-block: 16px;
 }
 
 .slider-container {

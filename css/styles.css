@@ -62,7 +62,10 @@ body {
 header {
   margin-block-start: 16px;
 }
-
+header a{
+  color: var(--gray10);
+  text-decoration: none;
+}
 .variante {
   text-transform: uppercase;
   font-weight: 400;

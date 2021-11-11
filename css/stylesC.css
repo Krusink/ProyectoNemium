@@ -41,19 +41,6 @@ body {
   margin: 0;
   font-style: normal;
   color: var(--gray30);
-}
-
-.hero {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url('../images/pattern.png');
-  block-size: 96px;
-}
-
-
-.wrapper {
-  margin: auto;
-}
-
-.header {
   display: block;
 }
 
@@ -63,6 +50,11 @@ body {
 
 header {
   margin-block-start: 16px;
+}
+
+header a {
+  color: var(--gray10);
+  text-decoration: none;
 }
 
 .variante {
@@ -105,10 +97,6 @@ nav ul.indexs li {
 
 nav ul.indexs li::marker {
   content: "";
-}
-
-.menu2 {
-  display: none;
 }
 
 
@@ -180,17 +168,6 @@ h3 {
   display: inline-block;
 }
 
-.section-content.num h3::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  background: #424242;
-  display: inline-block;
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-}
-
 blockquote {
   margin-block: 40px;
   margin-inline: 0;
@@ -218,7 +195,7 @@ blockquote span::before {
 }
 
 pre {
-  background: #FEC62E;
+  background: #e5e5e5;
   padding: 40px;
   overflow: auto;
   border-radius: 8px;
@@ -261,13 +238,14 @@ ol li {
 .slider-bullet-list {
   text-align: center;
   margin-block-start: 10px;
+
 }
 
 .slider-bullet {
   display: inline-block;
   inline-size: 15px;
   block-size: 15px;
-  background: white;
+  background: rgba(66, 66, 66, 0.2);
   border-radius: 50%;
 }
 
@@ -334,19 +312,17 @@ ol li {
 
 
 @media screen and (min-width: 1366px) {
-  .hero {
-    block-size: 350px;
-  }
+ .main header{
+   position: relative;
+   inline-size:100%;
+ }
+
 
   .wrapper {
     max-inline-size: 902px;
     margin: auto;
   }
 
-  .header {
-    position: sticky;
-    inset-block-start: -45px;
-  }
 
   .header-content {
     position: relative;
@@ -354,18 +330,8 @@ ol li {
     padding-inline: 0px;
   }
 
-  header {
-    position: absolute;
-    inset-block-start: 0;
-    inset-inline-start: -208px;
-    inline-size: 188px;
-
-  }
-
-
   .menu2 {
     display: inline-block;
-
   }
 
   header li {
